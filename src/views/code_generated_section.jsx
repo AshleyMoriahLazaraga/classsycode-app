@@ -5,7 +5,19 @@ export default function CodeGeneratedSection() {
   return (
     <Container
       maxWidth="sx"
-      sx={{ bgcolor: '#303134', height: '70vh', flex: 1,marginLeft: 2.5, marginRight: 2, marginTop: -5 }}
+      sx={{
+        bgcolor: '#303134',
+        borderRadius: '1%',
+        height: '100%',
+        display: 'flex',
+        flex: 1,
+        position: 'relative',
+        overflow: 'hidden',
+        marginTop: -1,
+        // marginRight: 2,
+        padding: '1%',
+        marginRight: '2%',
+      }}
     >
       <Box sx={{ height: '100%' }} />
     </Container>
