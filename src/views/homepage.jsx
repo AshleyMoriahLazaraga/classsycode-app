@@ -34,7 +34,7 @@ export default function Homepage() {
             display: 'flex',
             flexDirection: 'column',
             width: '50%',
-            gap: 1,
+            gap: 2,
             height: '100%',
           }}
         >
@@ -45,7 +45,6 @@ export default function Homepage() {
                 fontFamily: 'JetBrains Mono',
                 fontSize: 20,
                 marginLeft: '3%',
-                marginTop: 1, //do not remove, it is necessary to maintain the alignment
               }}
             >Class Diagram</Typography>
           </Box>

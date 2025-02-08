@@ -59,6 +59,7 @@ export default function UploadImageSection() {
             justifyContent: 'center',
             alignItems: 'center',
             overflow: 'hidden',
+            // marginTop: -1,
           }}
           onWheel={handleZoom}
         >
