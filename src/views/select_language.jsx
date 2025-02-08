@@ -19,7 +19,8 @@ export default function SelectLanguage() {
       justifyContent: "center",
       alignItems: "flex-start",
       height: "100%",
-      width: "50%",
+      minHeight: "80%",
+      width: "30%",
     }}>
       <FormControl
         sx={{

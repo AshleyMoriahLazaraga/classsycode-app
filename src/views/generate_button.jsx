@@ -25,7 +25,9 @@ export default function GenerateCode() {
         paddingLeft: '15%',
         paddingRight: '15%',
         height: "75%",
+        minHeight: "75%",
         width: "100%",
+        maxWidth: "500px",
       }}
       >GENERATE</Button>
     </Container>
