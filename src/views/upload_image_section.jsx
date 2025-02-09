@@ -7,11 +7,12 @@ import AddIcon from '@mui/icons-material/Add';
 import "@fontsource/jetbrains-mono"; // Import JetBrains Mono font
 
 
-export default function CodeGeneratedSection() {
+export default function UploadImageSection() {
   const [image, setImage] = useState(null);
   const [scale, setScale] = useState(1); // Default zoom level
 
   const greencolor = '#B6D9D7';
+  const grayish = '#303134';
 
   const handleImageUpload = (event) => {
     const file = event.target.files[0];
@@ -34,18 +35,18 @@ export default function CodeGeneratedSection() {
     <Container
       maxWidth="sx"
       sx={{
-        bgcolor: '#303134',
-        height: '70vh',
+        bgcolor: grayish,
+        borderRadius: '1%',
+        height: '100%',
         flex: 1,
-        marginRight: 2.5,
         marginLeft: 2,
+        marginTop: -1,
         display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         position: 'relative',
         overflow: 'hidden',
         flexDirection: 'column',
-        marginTop:-5,
+        //padding: '1%',
+        justifyContent: 'center',
       }}
     >
       {image ? (
@@ -54,10 +55,11 @@ export default function CodeGeneratedSection() {
             width: '100%',
             height: '100%',
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
             overflow: 'hidden',
-            position: 'relative',
+            // marginTop: -1,
           }}
           onWheel={handleZoom}
         >
@@ -93,7 +95,7 @@ export default function CodeGeneratedSection() {
               '&:hover': { bgcolor: 'rgba(255, 255, 255, 0.3)' },
             }}
           >
-            <AddIcon sx={{ fontSize: 28 }} />
+            <AddIcon sx={{ fontSize: 28, color: greencolor }} />
             <input type="file" accept="image/*" hidden onChange={handleImageUpload} />
           </Button>
         </Box>
@@ -105,7 +107,7 @@ export default function CodeGeneratedSection() {
             variant="contained"
             sx={{
               bgcolor: 'rgba(255, 255, 255, 0.2)',
-              color: 'white',
+              color: greencolor,
               borderRadius: '50%',
               width: 60,
               height: 60,
@@ -125,16 +127,14 @@ export default function CodeGeneratedSection() {
             sx={{
               color: greencolor,
               marginTop: 1.5,
-              fontSize: '14px',
+              fontSize: '16px',
               fontWeight: 500,
               textAlign: 'center',
-              fontFamily: '"JetBrains Mono", monospace', // Apply JetBrains Mono
+              fontFamily: 'JetBrains Mono',
             }}
           >
             Upload a Class Diagram
           </Typography>
-
-          
         </Box>
       )}
     </Container>

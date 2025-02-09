@@ -1,17 +1,35 @@
-import Box from '@mui/material/Box';
+import { Button } from '@mui/material';
 import Container from '@mui/material/Container';
 
 export default function GenerateCode() {
   return (
     <Container
       maxWidth="sx"
-      sx={{ bgcolor: '#303134',
+      sx={{
         height: '10vh',
         flex: 1,
-        marginRight: 2.5,
-        marginLeft: 2,}}
+        marginLeft: -1,
+        width: '50vh',
+        }}
     >
-      <Box sx={{ height: '100%' }} />
+
+      <Button
+      variant="contained"
+      sx={{
+        bgcolor: '#b8dbd9',
+        color: 'black',
+        fontFamily: 'JetBrains Mono',
+        fontSize: 24,
+        paddingTop: '2%',
+        paddingBottom: '2%',
+        paddingLeft: '15%',
+        paddingRight: '15%',
+        height: "75%",
+        minHeight: "75%",
+        width: "100%",
+        maxWidth: "500px",
+      }}
+      >GENERATE</Button>
     </Container>
   );
 }
