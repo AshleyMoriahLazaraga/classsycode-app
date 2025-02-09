@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
+import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
 
 export default function Sidebar({ isDrawerOpen, toggleDrawer }) {
   const greencolor = '#B6D9D7';
@@ -16,6 +16,7 @@ export default function Sidebar({ isDrawerOpen, toggleDrawer }) {
       onClose={toggleDrawer(false)}
       sx={{
         '& .MuiDrawer-paper': { width: 300, bgcolor: '#121212', color: 'white', fontFamily: 'JetBrains Mono' },
+        '.css-rizt0-MuiTypography-root': { fontFamily: 'JetBrains Mono' },
       }}
     >
       <List>
@@ -23,7 +24,7 @@ export default function Sidebar({ isDrawerOpen, toggleDrawer }) {
         <ListItem>
           <ListItemText
             primary="History"
-            sx={{ fontFamily: 'JetBrains Mono', color: 'white', fontWeight: 'bold' }}
+            sx={{ color: 'white', fontWeight: 'bold' }}
           />
         </ListItem>
       </List>
@@ -45,7 +46,7 @@ export default function Sidebar({ isDrawerOpen, toggleDrawer }) {
             >
               <ListItemText
                 primary={text}
-                sx={{ color: greencolor, fontFamily: 'JetBrains Mono' }}
+                sx={{ color: greencolor}}
               />
             </ListItem>
           </>
