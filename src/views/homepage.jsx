@@ -22,8 +22,8 @@ export default function Homepage() {
           alignItems: 'flex-start',
           height: 'calc(100vh - 64px)',
           bgcolor: '#121212',
-          gap: 4,
-          paddingTop: '4%',
+          gap: 4,  // Reduced gap
+          paddingTop: '1%', // Reduced padding
           width: '100vw',
           overflow: 'hidden',
         }}
@@ -69,7 +69,7 @@ export default function Homepage() {
           </Box>
         </Box>
 
-          <Box
+        <Box
           sx={{
             display: 'flex',
             flexDirection: 'column',
@@ -77,6 +77,7 @@ export default function Homepage() {
             gap: 2,
             height: '99%',
             paddingRight: '1%',
+            paddingBottom: '0.8%',
           }}
         >
           <Box>
