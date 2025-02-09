@@ -20,11 +20,12 @@ export default function Homepage() {
           flexDirection: 'row',
           justifyContent: 'center',
           alignItems: 'flex-start',
-          height: 'calc(100vh - 64px)',
+          //height: 'calc(100vh - 64px)',
           bgcolor: '#121212',
           gap: 4,  // Reduced gap
           paddingTop: '1%', // Reduced padding
           width: '100vw',
+          height: '92vh',
           overflow: 'hidden',
         }}
       >
