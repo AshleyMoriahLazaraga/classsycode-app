@@ -80,19 +80,19 @@ export default function UploadImageSection() {
             component="label"
             variant="contained"
             sx={{
-              position: 'absolute',
+              position: 'absolute', 
               bottom: 16,
               right: 16,
-              bgcolor: 'rgba(255, 255, 255, 0.2)',
+              bgcolor: 'rgba(77, 75, 75, 0.99)',
               color: 'white',
               borderRadius: '50%',
-              width: 50,
-              height: 50,
+              width: 60,
+              height: 60,
               minWidth: 'auto',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              '&:hover': { bgcolor: 'rgba(255, 255, 255, 0.3)' },
+              '&:hover': { bgcolor: 'rgba(134, 131, 131, 0.99)' },
             }}
           >
             <AddIcon sx={{ fontSize: 28, color: greencolor }} />

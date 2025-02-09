@@ -19,6 +19,7 @@ export default function GenerateCode() {
         bgcolor: '#b8dbd9',
         color: 'black',
         fontFamily: 'JetBrains Mono',
+        fontWeight: 'bold',
         fontSize: 24,
         paddingTop: '2%',
         paddingBottom: '2%',
